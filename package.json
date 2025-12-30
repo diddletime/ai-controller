@@ -1,0 +1,40 @@
+{
+  "name": "ai-controller",
+  "version": "3.0.0",
+  "type": "module",
+  "description": "AI → MCP → n8n Integration Pipeline",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "dev": "node --watch dist/index.js",
+    "build": "tsc",
+    "setup": "node dist/ui/setup.js",
+    "monitor": "node dist/ui/monitor.js",
+    "test": "node dist/test/test-server.js",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.33.0",
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "openai": "^4.77.0",
+    "express": "^4.21.0",
+    "cors": "^2.8.5",
+    "helmet": "^8.0.0",
+    "express-rate-limit": "^7.4.0",
+    "dotenv": "^16.4.5",
+    "winston": "^3.17.0",
+    "chalk": "^5.3.0",
+    "inquirer": "^9.2.12",
+    "ora": "^8.0.1"
+  },
+      "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/cors": "^2.8.17",
+    "@types/node": "^22.10.2",
+    "@types/inquirer": "^9.0.7",
+    "typescript": "^5.7.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "n8n-nodes-ai-controller",
+  "version": "1.0.0",
+  "description": "AI Controller node for n8n",
+  "main": "index.js",
+  "n8n": {
+    "nodes": ["dist/nodes/AIController/AIController.node.js"],
+    "credentials": ["dist/nodes/AIController/credentials/AIControllerApi.credentials.js"]
+  }
+}
